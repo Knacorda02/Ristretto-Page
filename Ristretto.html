@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ristretto Cafe">
+        <meta name="keywords" content="COFFEE, CAFE, FRAPPE">
+        <meta name="author" content="Ristretto Cafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ristretto Cafe</title>
+        <link rel="icon w-40 h-40 rounded-full overflow-hidden" href="image/ristrettologo.png" type="image/x-icon w-40 h-40 rounded-full overflow-hidden">
+    
+       
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+       <link rel="stylesheet" type="text/css" href="Main.css">
+
+
+
+       <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       <script src="jquery/jquery.js"></script>
+
+    </head>    
+     
+    <body>
+    
+        <div class="header text-yellow-800">
+
+                <div class="main-header flex w-full fixed top-0 left-0 flex-wrap items-center">
+                    
+                    <button class="hamburger relative hamburger-width text-center py-d hover:text-amber-600 hover:rounded lg:hidden nav-toggler cursor-pointer" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+
+                        <div class="logo-width text-3xl uppercase py-2 text-center font-semibold "><span>Ristretto Cafe</span></div>
+            
+                        <div class="hidden relative top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                            <div class="banner-h uppercase py-2 px-2 lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+                                
+                                <div class="item"><a href="#home" class="lg:inline-flex lg:w-auto px-3 py-2 text-yellow-800 hover:underline hover:font-semibold hover:text-amber-600">
+                                    <span>Home</span></a></div>
+                                
+                                <div class="item"><a href="#menu" class="lg:inline-flex lg:w-auto px-3 py-2 text-yellow-800 hover:underline hover:font-semibold hover:text-amber-600">
+                                    <span>Menu</span></a></div>
+                                
+                                <div class="item"><a href="#testimonial" class="lg:inline-flex lg:w-auto px-3 py-2 text-yellow-800 hover:underline hover:font-semibold hover:text-amber-600">
+                                    <span>Testimonial</span></a></div>
+                                
+                                <div class="item"><a href="#story" class="lg:inline-flex lg:w-auto px-3 py-2 text-yellow-800 hover:underline hover:font-semibold hover:text-amber-600">
+                                    <span>Our Story</span></a></div>
+                                
+                                <div class="item"><a href="#franchise" class="lg:inline-flex lg:w-auto px-3 py-2 text-yellow-800 hover:underline hover:font-semibold hover:text-amber-600">
+                                    <span>Contact Us</span></a></div>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+
+
+                <div class="sidebar-menu fixed top-0 w-full min-h-screen flex inset-y-0 left-0
+                transform -translate-x-full transition duration-200 ease-in-out lg:hidden">
+
+
+                    <div class="sidebar px-3 py-7 uppercase lg:hidden" id="sidebar">
+                        <div class="item"><a href="#home" class="block border-b-2 border-yellow-600 px-3 py-2 text-yellow-800 hover:rounded transition duration-200 hover:bg-amber-600 hover:text-yellow-100">
+                            <span>Home</span></a></div>
+                        
+                        <div class="item"><a href="#menu" class="block border-b-2 border-yellow-600 px-3 py-2 text-yellow-800 hover:rounded transition duration-200 hover:bg-amber-600 hover:text-yellow-100">
+                            <span>Menu</span></a></div>
+                        
+                        <div class="item"><a href="#testimonial" class="block border-b-2 border-yellow-600 px-3 py-2 text-yellow-800 hover:rounded transition duration-200 hover:bg-amber-600 hover:text-yellow-100">
+                            <span>Testimonial</span></a></div>
+                        
+                        <div class="item"><a href="#story" class="block border-b-2 border-yellow-600 px-3 py-2 text-yellow-800 hover:rounded transition duration-200 hover:bg-amber-600 hover:text-yellow-100">
+                            <span>Our Story</span></a></div>
+                        
+                        <div class="item"><a href="#franchise" class="block border-b-2 border-yellow-600 px-3 py-2 text-yellow-800 hover:rounded transition duration-200 hover:bg-amber-600 hover:text-yellow-100">
+                            <span>Contact Us</span></a></div>
+                    </div>
+
+
+                    <div class="dimmer flex-grow bg-transparent" id="dimmer"></div>
+                
+                </div>
+
+
+
+        
+
+
+                <div class="content">
+
+                    <div class="home w-full h-screen"><section id="home"></section><a id="home"></a>
+
+                        <div class="main-banner w-full" id="main-banner">
+
+                            <div class="imgban h-screen" id="bestseller"></div>
+                            <div class="imgban h-screen" id="promo"></div>
+                            <div class="imgban h-screen" id="home"></div>
+        
+                            <div class="banner_nav">
+                                <span class="nav_button"></span>
+                                <span class="nav_button"></span>
+                                <span class="nav_button"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="menu w-full grid grid-cols-1 md:grid-cols-2 p-4 flex"><section id="menu"></section><a id="menu"></a>
+
+                            <div class="leftmenu m-2.5 rounded-3xl shadow-lg  overflow-scroll">
+
+                                
+                                <ul class="flex flex-wrap block p-3 place-content-center">
+
+
+                                    <li><a href="#"  onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/hot%20coffee.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="image/hot coffee3.jpeg">           
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5 ">HOT COFFEES</div>
+                                        </div>
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/iced%20coffee.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/iced coffee.jpg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">ICED COFFEES</div>
+                                        </div>
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/hot%20drinks.html'; return false;">                                       
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/hot choco.jpg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">HOT DRINKS</div>
+                                        </div>
+                                    
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/cold%20drinks.html'; return false;">            
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/matcha icon.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">COLD DRINKS</div>
+                                            
+            
+                                        </div>
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/BLENDED%20COF.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/frappe2.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">ICED BLENDED <br> COFFEE</div>
+                                        </div>                                        
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/BLENDED%20NONCOF.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/noncoffee.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">ICED BLENDED <br> NON-COFFEE</div>
+                                        </div>          
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/fruit%20slush.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/fruit slush icon.jpg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">FRUIT SLUSH</div>
+                                        </div>           
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/house%20special.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/affogato.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">HOUSE <br> SPECIAL</div>
+                                        </div>          
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/classic%20milktea.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/milktea.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">CLASSIC <br> MILKTEA</div>
+                                        </div>         
+                                    </a></li>
+            
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/cheesecake%20milktea.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/cheesecake1.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">CHEESECAKE <br> MILKTEA</div>
+                                        </div>                                       
+                                    </a></li>
+            
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/fruit%20tea.html'; return false;">                                       
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/fruit tea.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">FRUIT TEA</div>
+                                        </div>                                       
+                                    </a></li>
+            
+            
+                                    <li><a href="#" onclick="document.getElementById('myIframe').src='http://127.0.0.1:5500/ADD-ONS.html'; return false;">
+                                        <div class="category-card font-bold flex p-2 m-2">
+                                            <div class="category-icon w-40 h-40 rounded-full overflow-hidden">
+                                                <img src="Image/wcc.jpeg">
+                                            </div>
+                                            <div class="category-txt hover:text-amber-600 hover:underline text-yellow-800 mt-16 pl-2.5">ADD-ONS</div>
+                                        </div>                                        
+                                    </a></li>
+            
+                                </ul>
+                                    
+
+                            </div>
+
+
+                            
+
+
+                            <div class="rightmenu m-2.5 flex-1 rounded-3xl overflow-hidden shadow-lg">
+                            
+                              
+
+                                <iframe id="myIframe" src="BESTSELLER.html" height="700px" width="100%" frameBorder="0" ></iframe>
+                                
+                                
+
+
+                            </div>
+                        
+                    </div>
+
+                    
+
+                    <div class="testimonial w-full pl-2 pr-2 p-4 mb-4"><section id="testimonial"></section><a id="testimonial"></a>
+                       
+
+                        <div id="slider" class="owl-carousel">
+
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/daphne.jpeg" alt=""></div>
+                                    <h2>Daphnie Joy</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perspiciatis dolore harum officia maxime necessitatibus consequuntur itaque illum illo, beatae qui eveniet dolorum similique. Voluptatem dolore impedit ex totam tempore?</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/ryan.jpeg" alt=""></div>
+                                    <h2>Ryan Torres</h2>
+                                    <p>I always enjoyed their tuna aglio pasta together with Lychee peach drink - perfect combination. Their menu offers a variety of drinks and pastries that are reasonably priced. The ambiance is cozy and their signature cheese puff tastes good too. Highly recommended!</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                   
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/Alyssa.jpeg" alt=""></div>
+                                    <h2>Alyssa Francisco</h2>
+                                    <p>One of my go-to cafes! They offer a wide variety of drinks for coffee and non-coffee drinkers. White Mocha is a must-try! Their cheese puffs are to die for!! I appreciate that the recipes seemed tailored and they make it their own. Definitely coming again.</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                   
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/jaymart.jpeg" alt=""></div>
+                                    <h2>Jaymart Zapanta</h2>
+                                    <p>One of the best coffee shop na napuntahan ko.<br>Yung style ng place ang ganda pwedeng pwede pang IG.<br> Yung staff nila super friendly and maasikaso.<br> My favorite coffee is yung Butterscotch 🤗</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                   
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/monique.jpeg" alt=""></div>
+                                    <h2>Monique Sobrepeña</h2>
+                                    <p>I love the ambiance of this cafe plus their location is very accessible. Staff is accommodating and friendly, the owner is very hands on in their cafe. My favorite drink is their Iced Matcha and White Chocolate Mocha, their pasta is also a must-try! Pastries is served fresh daily. Will definitely go back and recommend this cafe to my friends ❤️</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                  
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/Rexel.jpeg" alt=""></div>
+                                    <h2>Rexel John</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perspiciatis dolore harum officia maxime necessitatibus consequuntur itaque illum illo, beatae qui eveniet dolorum similique. Voluptatem dolore impedit ex totam tempore?</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                  
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/shane.jpeg" alt=""></div>
+                                    <h2>Shane Carmona</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perspiciatis dolore harum officia maxime necessitatibus consequuntur itaque illum illo, beatae qui eveniet dolorum similique. Voluptatem dolore impedit ex totam tempore?</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                  
+                                    </p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="content-area">
+                                <div class="content">
+                                    <div class="img-area"><img src="Image/walter.jpeg" alt=""></div>
+                                    <h2>Walter Demesa</h2>
+                                    <p>Good family owned business! I ordered mocha, chicken penne pasta and a muffin. I typically eat a lot and this was a fair serving for someone my size. Everything was really good and also reasonably priced. They also have really great refreshing options for hot summer days, from their cold drink menus. Been wanting to try it out again! 🙂</p>
+                                    <p class="tsocial">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                           <ion-icon name="logo-twitter"></ion-icon>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                           <ion-icon name="logo-tiktok"></ion-icon>                                  
+                                    </p>
+                                </div>
+                            </div>
+        
+                        
+        
+                        </div>
+        
+
+
+                    </div>
+
+
+                    <div class="story w-full p-10"><section id="story"></section><a id="story"></a>
+
+                        <div class="topX w-full grid grid-cols-1 md:grid-cols-2 h-1/2 align-center justify-content-evenly mb-5">
+
+                            <div class="storypic mr-16">
+                                <div class="storypicbox">
+                                <img class="rounded-lg hover:scale-105" src="Image/Caption.jpeg">
+                                </div>
+                            </div>
+
+
+                            <div class="storycap my-1 md:pl-8 p-3">
+                                <h3 class="text-4xl md:text-6xl m-4 md:p-5">Our Cafe</h3>
+
+                                    <p class="text-amber-800 text-base md:text-xl m-2.5">Cafe Ristretto offers specialty coffee by using only 100% Arabica beans from local & imported origin, exclusively crafted for us for quality and best tasting coffee.
+                                        <br>
+                                        <br>
+                                        Our Milk & Fruit Tea selections are carefully sourced to ensure quality tea blends for our customers.
+                                        <br>
+                                        <br>
+                                    </p>
+                                </div>
+                            
+                        </div>
+
+
+                        <div class="bottomX w-full grid grid-cols-1 md:grid-cols-2 h-1/2 mt-5">
+
+
+                            <div class="storypic mr-16 md:order-2">
+                                <div class="storypicbox">
+                                <img class="rounded-lg hover:scale-105" src="Image/Layout.jpeg">
+                                </div>
+                            </div>
+
+
+                            <div class="storycap my-1 md:order-1 md:pr-4 p-3">
+                                <h3 class="text-4xl md:text-6xl m-4 md:p-5">Our Concept</h3>
+                
+                                <p class="text-amber-800 text-base md:text-xl m-2.5 ">Our shop concept is bright & minimalist to provide customers with a cozy and relaxing ambience.
+                                    <br>
+                                    <br>
+                                    A place where customers can make it their work space or hang out with friends and family while enjoying good food, drinks and relaxing music.</p>
+                            </div>
+
+
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="strip w-full strip-h"><section id="franchise"></section><a id="franchise"></a>
+                        <div class="franchisecaption text-lg font-semibold p-3 text-center">JOIN OUR FRANCHISE NETWORK</div>
+                    </div>
+                    
+                </div> <!--content-->
+
+                
+
+                <div class="footer">
+
+                    <div class="contact w-full">
+                        <div class="w-full grid grid-cols-1 md:grid-cols-3">
+
+                            <div class="md:order-2 p-4 m-4">
+                            
+                                    <h3 class="text-lg font-bold"> STAY CONNECTED </h3>
+                                    <br>
+                                    <p>
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    09956300201
+                                    <br>
+                                    <br>
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    caferistretto01@gmail.com
+                                    <br>
+                                    <br>
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    Valleygolf, Ortigas Extn. Cainta, Rizal
+                                    </p>
+                                
+                            
+                            </div>
+
+
+                            <div class="accounts w-full md:order-3 grid grid-cols-2 p-4">
+                            
+                                    <div class="partners w-1/2">
+                                    <br>
+                                    <h3 class="text-lg font-bold"> PARTNERS </h3>
+                                    <br>
+                                    <button onclick="location.href='https://food.grab.com/ph/en/restaurant/ristretto-celso-tuazon-ave-valley-golf-delivery/2-C24JVKLULEXAVJ'";>Grab Food&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                    <br>
+                                    <br>
+                                    <button onclick="location.href='https://food.grab.com/ph/en/restaurant/ristretto-celso-tuazon-ave-valley-golf-delivery/2-C24JVKLULEXAVJ'";>Food Panda&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                    </div>
+                
+                
+                                    <div class="navigate w-1/2">
+                                    <br>
+                                    <h3 class="text-lg font-bold"> NAVIGATE </h3>
+                                    <br>
+                                    <button onclick="location.href='Promotions.pdf'";>Promotions&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                    <br>
+                                    <br>
+                                    <button onclick="location.href='MobileBar.pdf'";>Mobile Bar&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                    <br>
+                                    <br>
+                                    <button onclick="location.href='Franchising.pdf'";>Franchise&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                    </div>
+
+                            </div>
+
+
+                            <div class="map md:order-1 w-full">
+                                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=ristretto%20cainta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:434px;width:480px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="social w-full">
+
+                        <div class="socials w-full" id="socials">
+
+                            <br>
+                            <br>
+                            <a class="btn" href="https://www.facebook.com/ristrettocainta" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                
+                                    
+                            <a class="btn" href="https://www.instagram.com/ristrettocainta/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                
+                
+                            <a class="btn" href="https://www.tiktok.com/@ristrettocainta" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                     
+                
+                            <a class="btn" href="https://food.grab.com/ph/en/restaurant/ristretto-celso-tuazon-ave-valley-golf-delivery/2-C24JVKLULEXAVJ" target="_blank">
+                              <i class="fa-brands fa-youtube"></i>
+                            </a>
+                
+                
+                            <a class="btn" href="https://www.facebook.com/ristrettocainta" target="_blank">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>        
+                        
+                
+                        </div>
+
+                    </div>
+
+
+                    <div class="copyrightText text-center text-white p-2">
+
+                        <p> Copyright &copy; 2022 Ristretto Restaurant Inc. All Rights Reserved.</p>
+
+                    </div>
+
+                </div>
+
+
+            
+
+
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                <script src="Index.js"></script>
+            
+            </div>
+        </div>
+    </body>
+
+    
+</html>
